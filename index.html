@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Interactive rating component</title>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="rating-container">
+        <div class="circle">
+          <img src="images/icon-star.svg" alt="">
+        </div>
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+        <form class="rating-form">
+          <fieldset aria-label="How did we do?">
+            <input class="button-rating visually-hidden" type="radio" id="rating-1" name="rating" value="1" required>
+            <label class="circle" for="rating-1">1</label>
+            <input class="button-rating visually-hidden" type="radio" id="rating-2" name="rating" value="2" required>
+            <label class="circle" for="rating-2">2</label>      
+            <input class="button-rating visually-hidden" type="radio" id="rating-3" name="rating" value="3" required>
+            <label class="circle" for="rating-3">3</label>
+            <input class="button-rating visually-hidden" type="radio" id="rating-4" name="rating" value="4" required>
+            <label class="circle" for="rating-4">4</label>
+            <input class="button-rating visually-hidden" type="radio" id="rating-5" name="rating" value="5" required>
+            <label class="circle" for="rating-5">5</label>
+          </fieldset>
+          <button class="button" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="thank-container hidden">
+        <img src="images/illustration-thank-you.svg" alt="">
+        <div class="result-container">
+          <p>You selected <span class="result"></span> out of 5</p>
+        </div>
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
